@@ -1,9 +1,8 @@
 import { Image, StyleSheet, Platform } from 'react-native';
-
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import { HelloWave } from '../../components/HelloWave';
+import ParallaxScrollView from '../../components/ParallaxScrollView';
+import { ThemedText } from '../../components/ThemedText';
+import { ThemedView } from '../../components/ThemedView';
 
 export default function HomeScreen() {
   return (
@@ -20,30 +19,28 @@ export default function HomeScreen() {
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
+        <ThemedText type="subtitle">Step 1: Find Your Doodle</ThemedText>
         <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({ ios: 'cmd + d', android: 'cmd + m' })}
+          Scroll <ThemedText type="defaultSemiBold">Zuri's Lineage MAKE THIS LARGER WHEN SCROLLED OVER AND BRING UP ALL DOODLE NAMES SCROLL</ThemedText> to find your Doodle's name.
+          {/* <ThemedText type="defaultSemiBold">
+            {Platform.select({ ios: 'subscribe', android: 'cmd + m' })}
           </ThemedText>{' '}
-          to open developer tools.
+          to subscribe. */}
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
-        </ThemedText>
+        <ThemedText type="subtitle">Step 2: Confirm</ThemedText>
+        <ThemedText type="defaultSemiBold">
+Select and Click to confirm Doodle Lineage.MAKE THIS LARGER WHEN SCROLLED OVER AND SHOW SELECTED DOODLE NAME WITH A CLICK TO CONFIRM</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">Step 3: Subscribe to Doodle Base</ThemedText>
         <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
+          <ThemedText type="defaultSemiBold">form here for Owner Name</ThemedText>
+          <ThemedText type="defaultSemiBold">form here for Owner Email</ThemedText>
+          <ThemedText type="defaultSemiBold">form here for password</ThemedText> to{' '}
+          <ThemedText type="defaultSemiBold">click button here for already subscribed</ThemedText>. 
+          Have a subscribe button that takes you to the Home Page
         </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
@@ -61,10 +58,10 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   reactLogo: {
-    height: "100%",
-    width: "100%",
-    top: 20,
-    left: 0,
+    height: "115%",
+    width: "120%",
+    top: 5,
+    left:-30,
     position: 'absolute',
   },
 });
