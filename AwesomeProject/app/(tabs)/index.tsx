@@ -22,10 +22,6 @@ export default function HomeScreen() {
         <ThemedText type="subtitle">Step 1: Find Your Doodle</ThemedText>
         <ThemedText>
           Scroll <ThemedText type="defaultSemiBold">Zuri's Lineage MAKE THIS LARGER WHEN SCROLLED OVER AND BRING UP ALL DOODLE NAMES SCROLL</ThemedText> to find your Doodle's name.
-          {/* <ThemedText type="defaultSemiBold">
-            {Platform.select({ ios: 'subscribe', android: 'cmd + m' })}
-          </ThemedText>{' '}
-          to subscribe. */}
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
